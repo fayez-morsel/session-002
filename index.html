@@ -10,6 +10,16 @@
             box-sizing: border-box;
         }
         
+        #img-frame1 {
+            overflow: hidden;
+            height: 50px;
+            width: 50px;
+        }
+        
+        #img-frame1 img {
+            width: 100%;
+        }
+
         #img-frame {
             overflow: hidden;
             height: 100px;
@@ -21,23 +31,25 @@
         }
         
         body {
+            height: 645px;
             display: flex;
             flex-direction: row;
         }
         body > div {
             width: 50%;
+            height: 100%;
         }
         
         body > div:first-child{
             background: rgb(39, 226, 255);
         }
     </style>
-    <title>Hsein Bitar</title>
+    <title>fayez morsel</title>
 </head>
 <body>
     <div>
-        <!-- blue half -->
-        <div>
+        
+        <div class="blue-half">
             <!-- to control horizontal position within parent -->
             <div id="img-frame">
                 <img src="351602.png" alt="">
@@ -65,8 +77,40 @@
         </div>
     </div>
     <div>
-        <!-- white half -->
-        white half
+            <div class="headwhite">
+                <h1>Email</h1>
+                <h1>
+                    <mark>marketing platform</mark>
+                </h1>
+                <h1>to grow your business</h1>
+            </div>
+            <div class="mainwhite">
+               <div><img src="email.png" id="img-frame1">
+                    <span>Email marketing</span>
+                </div>
+                <div><img src="profile.png" id="img-frame1">
+                    <span>Advanced segmentation</span>
+                </div>
+                <div><img src="carte-id.png" id="img-frame1">
+                    <span>AI-powered,code-free website builder</span>
+                </div>
+                <div><img src="marketing.jpg" id="img-frame1">
+                    <span>Marketing automation</span>
+                </div>
+                <div><img src="engaging.jpg" id="img-frame1">
+                    <span>Highly enging webinars</span>
+                </div>
+                <div><img src="signup.png" id="img-frame1">
+                    <span>signup forms and popups</span>
+                </div>
+                <div><img src="analytics.png" id="img-frame1">
+                    <span>Advanced analytics and testing tools </span>
+                </div>
+                <div><img src="funnels.png" id="img-frame1">
+                    <span>Automated sales, lead and webinar funnels</span>
+                </div>
+            </div>
+            <div></div>
     </div>
 </body>
 </html>
