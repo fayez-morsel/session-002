@@ -166,6 +166,12 @@
         .zoom:hover {
           transform: scale(1.5);
         }
+
+        .inh:hover{
+            background-color: rgb(174, 197, 177);
+            transform: scale(2);
+            transition: transform .4s;
+        }
                 
        
         
@@ -183,14 +189,14 @@
             <form action="">
                 <h1 >Create a free account now</h1>
                 <div>
-                    <input type="text" name="fullname" id="fullname" required placeholder="Enter your full name">
+                    <input type="text" name="fullname" id="fullname" required placeholder="Enter your full name" class="inh">
                     <!-- <p>Error: </p> -->
                 </div>
                 <div>
-                    <input type="email" name="email" id="email" required placeholder="Enter your email">
+                    <input type="email" name="email" id="email" required placeholder="Enter your email" class="inh">
                 </div>
                 <div>
-                    <input type="password" name="password" id="password" required placeholder="Enter your password">
+                    <input type="password" name="password" id="password" required placeholder="Enter your password" class="inh">
                 </div>
             </form>
             <button type="submit" id="button" class="zoom">
