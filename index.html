@@ -22,8 +22,9 @@
 
         #img-frame {
             overflow: hidden;
-            height: 100px;
-            width: 100px;
+            height: 150px;
+            width: 150px;
+
         }
         
         #img-frame img {
@@ -31,7 +32,7 @@
         }
         
         body {
-            height: 645px;
+            height: 780px;
             display: flex;
             flex-direction: row;
         }
@@ -43,6 +44,68 @@
         body > div:first-child{
             background: rgb(39, 226, 255);
         }
+
+        .blue-half{
+            height: 100%;
+            margin-left: 140px;
+          
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form > h1 {
+            color: white;
+        }
+
+        form > div {
+                width: 100%;
+                margin: 30px 0;
+               
+        }
+
+        form > div > input {
+            width: 100%;
+            height: 50px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: hidden;
+            padding: 5px;
+        }
+
+        button{
+            background-color: chartreuse;
+            height: 45px;
+            width: 240px;
+            border-radius: 15px;
+            border: 2px;
+           
+        }
+
+        .lgn{
+            margin: 10px 0;
+            color: aliceblue;
+            font-size: smaller;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+
+        a {
+            color: aliceblue;
+        }
+
+        .white-half {
+            display: flex;
+            justify-content: center;
+            align-items: space-between;
+            flex-direction: column;
+            margin-left: 60px;
+        }
+
+
+         
+       
+        
     </style>
     <title>fayez morsel</title>
 </head>
@@ -50,7 +113,7 @@
     <div>
         
         <div class="blue-half">
-            <!-- to control horizontal position within parent -->
+            
             <div id="img-frame">
                 <img src="351602.png" alt="">
             </div>
@@ -67,16 +130,16 @@
                     <input type="password" name="password" id="password" required placeholder="Enter your password">
                 </div>
             </form>
-            <button>
+            <button type="submit" id="button">
                 CREATE ACCOUNT
             </button>
-            <p>
+            <p class="lgn">
                 Already have an account?
                 <a href="/login">Log In</a>
             </p>
         </div>
     </div>
-    <div>
+    <div class="white-half">
             <div class="headwhite">
                 <h1>Email</h1>
                 <h1>
@@ -110,7 +173,13 @@
                     <span>Automated sales, lead and webinar funnels</span>
                 </div>
             </div>
-            <div></div>
+            <div>
+                <span>Start for free</span>
+                <span>.</span>
+                <span>No credit card required</span>
+                <span>.</span>
+                <span>Cancel</span>
+            </div>
     </div>
 </body>
 </html>
