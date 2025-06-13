@@ -42,7 +42,7 @@
         }
         
         body > div:first-child{
-            background: rgb(39, 226, 255);
+            background: rgb(18, 131, 230);
         }
 
         .blue-half{
@@ -58,6 +58,8 @@
         form > h1 {
             color: white;
         }
+
+
 
         form > div {
                 width: 100%;
@@ -99,10 +101,43 @@
             justify-content: center;
             align-items: space-between;
             flex-direction: column;
-            margin-left: 60px;
+            padding-left: 60px;
+            padding-right: 100px;
+            gap: 90px;
         }
 
+        .mainwhite{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px;
 
+        }
+
+        .mainwhite > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+
+        .headwhite{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+
+        .footwhite{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            color: grey;
+        }
+
+     
          
        
         
@@ -118,7 +153,7 @@
                 <img src="351602.png" alt="">
             </div>
             <form action="">
-                <h1>Create a free account now</h1>
+                <h1 >Create a free account now</h1>
                 <div>
                     <input type="text" name="fullname" id="fullname" required placeholder="Enter your full name">
                     <!-- <p>Error: </p> -->
@@ -152,28 +187,28 @@
                     <span>Email marketing</span>
                 </div>
                 <div><img src="profile.png" id="img-frame1">
-                    <span>Advanced segmentation</span>
+                    <span>Advanced<br> segmentation</span>
                 </div>
                 <div><img src="carte-id.png" id="img-frame1">
-                    <span>AI-powered,code-free website builder</span>
+                    <span>AI-powered,code-free <br> website builder</span>
                 </div>
                 <div><img src="marketing.jpg" id="img-frame1">
-                    <span>Marketing automation</span>
+                    <span>Marketing <br> automation</span>
                 </div>
                 <div><img src="engaging.jpg" id="img-frame1">
-                    <span>Highly enging webinars</span>
+                    <span>Highly enging <br> webinars</span>
                 </div>
                 <div><img src="signup.png" id="img-frame1">
-                    <span>signup forms and popups</span>
+                    <span>signup forms <br>and popups</span>
                 </div>
                 <div><img src="analytics.png" id="img-frame1">
-                    <span>Advanced analytics and testing tools </span>
+                    <span>Advanced analytics <br>and testing tools </span>
                 </div>
                 <div><img src="funnels.png" id="img-frame1">
-                    <span>Automated sales, lead and webinar funnels</span>
+                    <span>Automated sales, lead <br>and webinar funnels</span>
                 </div>
             </div>
-            <div>
+            <div class="footwhite">
                 <span>Start for free</span>
                 <span>.</span>
                 <span>No credit card required</span>
