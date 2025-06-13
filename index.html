@@ -155,7 +155,17 @@
             color: rgb(195, 0, 255);
         } 
 
-        
+        .zoom {
+            background-color: rgb(221, 255, 0);
+            transition: transform .2s; 
+            width: 200px;
+            height: 50px;
+            margin: 0 auto;
+        }
+
+        .zoom:hover {
+          transform: scale(1.5);
+        }
                 
        
         
@@ -183,9 +193,9 @@
                     <input type="password" name="password" id="password" required placeholder="Enter your password">
                 </div>
             </form>
-            <button type="submit" id="button">
+            <button type="submit" id="button" class="zoom">
                 CREATE ACCOUNT
-            </button>
+            </button >
             <p class="lgn">
                 Already have an account?
                 <a href="/login">Log In</a>
@@ -201,7 +211,7 @@
                 <h1>to grow your business</h1>
             </div>
             <div class="mainwhite">
-               <div><img src="email.png" id="img-frame1">
+               <div><img src="email.png" id="img-frame1" >
                     <span>Email marketing</span>
                 </div>
                 <div><img src="profile.png" id="img-frame1">
